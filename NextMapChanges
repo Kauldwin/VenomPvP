@@ -2,3 +2,5 @@ Next map changes:
 
 - Remove &k from deluxe tags
 - Redo the ftop system with updated plugin
+- Implement a level up system for XP
+- Create a simple and easy to use kit GUI, allow to preview kits aswell
