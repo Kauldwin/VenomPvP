@@ -1,6 +1,10 @@
 Next map changes:
 
-- Remove &k from deluxe tags
+ Remove &k &n and &l from deluxe tags
 - Redo the ftop system with updated plugin
 - Implement a level up system for XP
 - Create a simple and easy to use kit GUI, allow to preview kits aswell
+ Create new email settings/mailbox (FORUMS) so that players receive their confirmation emails
+ Redo the Skyblock shop prices to balance the eco out
+ Remove vote party keys to prevent alts afking farming keys
+ Add purchaseable "Tags" from buy.venompvp.org to Skyblock
