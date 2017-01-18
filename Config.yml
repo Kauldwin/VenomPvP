@@ -1,0 +1,760 @@
+# DeluxeChat version 1.6.5.1 config file
+# Created by extended:clip
+# list as many format sections you want under formats:
+# each format section requires a default template that should be modified and
+# also requires a unique number for the priority higher number = lower priority
+# ex: guest-100, owner-1
+#   YOU MUST KEEP A default TEMPLATE! It is used when players have no other template assigned!
+#   
+# example format template:
+# formats: 
+#   default:
+#     priority: 2147483647
+#     channel: ''
+#     prefix: '&8[&7Guest&8] '
+#     name_color: '&7'
+#     name: '%player%'
+#     suffix: '&7> '
+#     chat_color: '&f'
+#     channel_tooltip:
+#     - '&7%player% &bis a Guest'
+#     prefix_tooltip:
+#     - '&7%player% &bis a Guest'
+#     name_tooltip:
+#     - ''
+#     suffix_tooltip:
+#     - ''
+#     channel_click_command: '
+#     prefix_click_command: '/ranks
+#     name_click_command: '/msg %player% 
+#     suffix_click_command: '
+#   Member:
+#     priority: 100
+#     channel: ''
+#     prefix: '&8[&aMember&8] '
+#     name_color: '&7'
+#     name: '%player%'
+#     suffix: '&7> '
+#     chat_color: '&f'
+#     channel_tooltip:
+#     - '&7%player% &bis a Member'
+#     prefix_tooltip:
+#     - '&7%player% &bis a Member'
+#     name_tooltip:
+#     - ''
+#     suffix_tooltip:
+#     - ''
+#     channel_click_command: '
+#     prefix_click_command: '/ranks
+#     name_click_command: '/msg %player% 
+#     suffix_click_command: '
+check_updates: true
+bungeecord:
+  enabled: false
+  servername: '&8[&cServer&8]'
+  join_global: true
+relation_placeholders_enabled: true
+timestamp_format: MM/dd/yy HH:mm:ss
+boolean:
+  'true': '&atrue'
+  'false': '&cfalse'
+ops_use_group_format: true
+hooks:
+  javascript_placeholders: false
+  minecraft_statistics: true
+  acidisland: false
+  askyblock: false
+  autorank: false
+  autosell: false
+  banmanager: false
+  battlelevels: false
+  chatcolor: false
+  chatreaction: true
+  checknamehistory: false
+  deluxetags: true
+  essentials: true
+  ezblocks: false
+  ezprestige: false
+  ezrankslite: false
+  ezrankspro: false
+  factions_mcore: false
+  factions_uuid: true
+  galistener: true
+  gangsplus: true
+  heroes: false
+  islandworld: true
+  jobs: false
+  killrewards: false
+  killstats: true
+  marriagemaster: true
+  mcinfected: false
+  mcinfected-ranks: false
+  mcmmo: false
+  mvdw_placeholderapi: false
+  nicky: false
+  placeholderapi: false
+  playerpoints: false
+  plotme: false
+  plotsquared: false
+  prisongangs: false
+  pvpstats: false
+  quicksell: false
+  royalcommands: false
+  simpleclans: false
+  simplecoinsapi: false
+  simpleprefix: false
+  simple_suffix: false
+  skywarsreloaded: false
+  sqlperms: true
+  sqltokens: false
+  survivalgames: false
+  teams: false
+  tokenenchant: true
+  towny: true
+  uskyblock: false
+  ultimatevotes: false
+  vanishnopacket: false
+  vault_perms: true
+  vault_eco: true
+  voteparty: false
+  werewolf: false
+  wickedskywars: false
+  priveleges: false
+chat_filter:
+  enabled: false
+  list:
+  - '.; '
+  - fuck;fuck
+private_message:
+  enabled: false
+  bungeecord: false
+private_message_formats:
+  to_sender:
+    format: '&7you &e-> &7%recipient% &7:'
+    tooltip:
+    - '%player_server%'
+    click_command: '/r '
+    chat_color: '&f'
+  to_recipient:
+    format: '&7%player% &e-> &7you &7:'
+    tooltip:
+    - '%player_server%'
+    click_command: '/r '
+    chat_color: '&f'
+  social_spy: '&8[&cspy&8] &f%player% &e-> &f%recipient%&7:'
+formats:
+  default:
+    priority: 100
+    channel: ''
+    prefix: '&8(&7Explorer&8) &7'
+    name_color: ''
+    name: '&f%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - ''
+    prefix_tooltip:
+    - ''
+    name_tooltip:
+    - '&7-=[&f✦&7]=-  &7-=[&7%player%&7]=-  &7-=[&f✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    suffix_tooltip: '%deluxetags_description%'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: /msg %player%
+    suffix_click_command: ''
+#
+# PYTHON
+#
+  Python:
+    priority: 99
+    channel: ''
+    prefix: '&8(&2Python&8) &r'
+    name_color: ''
+    name: '&2%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - ''
+    name_tooltip:
+    - '&7-=[&2✦&7]=-  &7-=[&2%player%&7]=-  &7-=[&2✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_healthmax%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    prefix_tooltip:
+    - '&2%essentials_nickname% &7has purchased this rank from the store!'
+    - '&2Click this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
+    name_click_command: /msg %player%
+    suffix_click_command: ''
+#
+# BULLSNAKE
+#
+  Bullsnake:
+    priority: 97
+    channel: ''
+    prefix: '&8(&bBullsnake&8) &r'
+    name_color: ''
+    name: '&b%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - ''
+    name_tooltip:
+    - '&7-=[&b✦&7]=-  &7-=[&b%player%&7]=-  &7-=[&b✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    prefix_tooltip:
+    - '&b%essentials_nickname% &7has purchased this rank from the store!'
+    - '&bClick this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
+    name_click_command: /msg %player%
+    suffix_click_command: ''
+#
+# VIPER
+#
+  Viper:
+    priority: 95
+    channel: ''
+    prefix: '&8(&eViper&8) &r'
+    name_color: ''
+    name: '&e%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - ''
+    name_tooltip:
+    - '&7-=[&e✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&e✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    prefix_tooltip:
+    - '&e%essentials_nickname% &7has purchased this rank from the store!'
+    - '&eClick this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
+    name_click_command: /msg %player%
+    suffix_click_command: ''
+#
+# COBRA
+#
+  Cobra:
+    priority: 93
+    channel: ''
+    prefix: '&8(&dCobra&8) &r'
+    name_color: ''
+    name: '&d%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - ''
+    name_tooltip:
+    - '&7-=[&9✦&7]=-  &7-=[&9%player%&7]=-  &7-=[&9✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    prefix_tooltip:
+    - '&9%essentials_nickname% &7has purchased this rank from the store!'
+    - '&9Click this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
+    name_click_command: /msg %player%
+    suffix_click_command: ''
+#
+# VENOMOUS
+#
+  Venomous:
+    priority: 91
+    channel: ''
+    prefix: '&8(&aVenomous&8) &r'
+    name_color: ''
+    name: '&a%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - ''
+    name_tooltip:
+    - '&7-=[&a✦&7]=-  &7-=[&a%player%&7]=-  &7-=[&a✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    prefix_tooltip:
+    - '&a%essentials_nickname% &7has purchased this rank from the store!'
+    - '&aClick this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
+    name_click_command: /msg %player%
+    suffix_click_command: ''
+#
+# ANACONDA
+#
+  Anaconda:
+    priority: 90
+    channel: ''
+    prefix: '&8(&c&lAnaconda&8) &r'
+    name_color: ''
+    name: '&c%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '%deluxetags_description%'
+    name_tooltip:
+    - '&7-=[&c✦&7]=-  &7-=[&c&l%player%&7]=-  &7-=[&c✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    prefix_tooltip:
+    - '&c%essentials_nickname% &7has purchased this rank from the store!'
+    - '&cClick this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
+    name_click_command: /msg %player%
+    suffix_click_command: ''
+#
+# KANEKI_GHOUL_ STREAMER/YT
+#
+  kaneki_ghoul_:
+    priority: 89
+    channel: ''
+    prefix: '&8(&c&lAnaconda&8) &r'
+    name_color: ''
+    name: '&c%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&c&lClick here to go to my channel!'
+    name_tooltip:
+    - '&7-=[&c✦&7]=-  &7-=[&c&l%player%&7]=-  &7-=[&c✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    prefix_tooltip:
+    - '&c%essentials_nickname% &7has purchased this rank from the store!'
+    - '&cClick this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://youtube.com/krakingamer'
+#
+# STREAMER - YT
+#
+  Streamer:
+    priority: 88
+    channel: ''
+    prefix: '&8(&4You&fTuber&8) &r'
+    name_color: ''
+    name: '&c%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&7'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&c&lClick here to go to my channel!'
+    name_tooltip:
+    - '&7-=[&c✦&7]=-  &7-=[&c&l%player%&7]=-  &7-=[&c✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
+    - '&cFaction Claims: &f%factions_claims%'
+    prefix_tooltip:
+    - '&c%essentials_nickname% &7has purchased this rank from the store!'
+    - '&cClick this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://youtube.com/krakingamer'
+#
+# HELPER - STAFF
+#	
+ Helper:
+    priority: 8
+    channel: ''
+    prefix: '&8(&5&lHelper&8) &r'
+    name_color: ''
+    name: '&d%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&d'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&f&lClick this to open the donation store!'
+    name_tooltip:
+    - '&7-=[&6✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&6✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_power%'
+    - '&cFaction Claims: &f%factions_claims%'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://Buy.VenomPvP.org'	
+#
+# TRIAL MOD - STAFF
+#
+ TMod:
+    priority: 7
+    channel: ''
+    prefix: '&8(&d&lTrial-Mod&8) &r'
+    name_color: ''
+    name: '&d%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&d'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&f&lClick this to open the donation store!'
+    name_tooltip:
+    - '&7-=[&6✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&6✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_power%'
+    - '&cFaction Claims: &f%factions_claims%'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://Buy.VenomPvP.org'
+#
+# MODERATOR - STAFF
+#
+ Moderator:
+    priority: 6
+    channel: ''
+    prefix: '&8(&b&lModerator&8) &r'
+    name_color: ''
+    name: '&c%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&b'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&f&lClick this to open the donation store!'
+    name_tooltip:
+    - '&7-=[&6✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&6✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_power%'
+    - '&cFaction Claims: &f%factions_claims%'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://Buy.VenomPvP.org'
+#
+# MODERATOR PLUS - STAFF
+#
+ ModeratorPlus:
+    priority: 5
+    channel: ''
+    prefix: '&8(&b&lModerator&6+&8) &r'
+    name_color: ''
+    name: '&c%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&b'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&f&lClick this to open the donation store!'
+    name_tooltip:
+    - '&7-=[&6✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&6✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_power%'
+    - '&cFaction Claims: &f%factions_claims%'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://Buy.VenomPvP.org'
+#
+# SENIOR MOD - STAFF
+#
+ SeniorMod:
+    priority: 4
+    channel: ''
+    prefix: '&8(&e&lSnr.Mod&8) &r'
+    name_color: ''
+    name: '&d%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&d'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&f&lClick this to open the donation store!'
+    name_tooltip:
+    - '&7-=[&6✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&6✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_power%'
+    - '&cFaction Claims: &f%factions_claims%'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://Buy.VenomPvP.org'
+#
+# SENIOR MOD PLUS - STAFF
+#
+SeniorModPlus:
+    priority: 3
+    channel: ''
+    prefix: '&8(&e&lSnr.Mod&6+&8) &r'
+    name_color: ''
+    name: '&d%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&d'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&f&lClick this to open the donation store!'
+    name_tooltip:
+    - '&7-=[&6✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&6✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_power%'
+    - '&cFaction Claims: &f%factions_claims%'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://Buy.VenomPvP.org'
+#
+# ADMIN - STAFF
+#
+admin:
+    priority: 2
+    channel: ''
+    prefix: '&8(&4&lAdmin&8) '
+    name_color: ''
+    name: '&c%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&c'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    suffix_tooltip:
+    - '&f&lClick this to open the donation store!'
+    name_tooltip:
+    - '&7-=[&6✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&6✦&7]=-'
+    - '&r'
+    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&bVotes: &f%galistener_votes%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    - '&6Faction: &f%factions_faction%'
+    - '&aFaction Power: &f%factions_power%&7/&f%factions_power%'
+    - '&cFaction Claims: &f%factions_claims%'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: /msg %player%
+    suffix_click_command: '[URL]http://Buy.VenomPvP.org'
+#
+# OWNER - MATT
+#
+owner:
+    priority: 1
+    channel: ''
+    prefix: '&8&l(&a&lOwner&8&l) '
+    name_color: ''
+    name: '&f%essentials_nickname%'
+    suffix: ' %deluxetags_tag% &8&l» '
+    chat_color: '&c'
+    channel_tooltip:
+    - '%deluxetags_description%'
+    prefix_tooltip:
+    - '&7Need help?'
+    - '&7Ill be happy to assist you!'
+    name_tooltip:
+    - '&7-=[&6✦&7]=-  &7-=[&e%player%&7]=-  &7-=[&6✦&7]=-'
+    - '&r'
+    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
+    - '&2Time Played: &f%statistic_time_played%'
+    - '&6Quiz Wins: &f%chatreaction_wins%'
+    - '&r'
+    - '&aKills&7: &f%killstats_kills%'
+    - '&cDeaths&7: &f%killstats_deaths%'
+    - '&eKDR&7: &f%killstats_kdr%'
+    - '&r'
+    suffix_tooltip: '&f&lClick this to open the donation store!'
+    channel_click_command: ''
+    prefix_click_command: ''
+    name_click_command: ''
+    suffix_click_command: ''
+chat_url: {}	
