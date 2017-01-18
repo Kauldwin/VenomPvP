@@ -1,0 +1,1054 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+#
+# DEFAULT - MEMBER
+#
+  Explorer:
+    default: true
+    permissions:
+    - -mcmmo.ability.swords.serratedstrikes
+    - -uan.title.receive
+    - -uan.action.receive
+    - ===============
+    - auction.bid
+    - auction.limit.10
+    - auction.start
+    - autolapis.autofill
+    - banknotes.deposit
+    - banknotes.withdraw
+    - Bosses.Access
+    - brutal.wild
+    - bukkit.command.tps
+    - chatcontrol.bypass.swear
+    - chatmgr.pclear
+    - chatreaction.top
+    - chatreaction.wins
+    - chatreaction.wins.others
+    - chestcommands.open.block-menu.yml
+    - chestcommands.open.blocks.yml
+    - chestcommands.open.buy
+    - chestcommands.open.buy-blocks.yml
+    - chestcommands.open.buy-drops.yml
+    - chestcommands.open.buy-farming.yml
+    - chestcommands.open.buy-food.yml
+    - chestcommands.open.buy-minerals.yml
+    - chestcommands.open.buy.yml
+    - chestcommands.open.decor.yml
+    - chestcommands.open.drops-menu.yml
+    - chestcommands.open.drops.yml
+    - chestcommands.open.example.yml
+    - chestcommands.open.extra-kits.yml
+    - chestcommands.open.farming-menu.yml
+    - chestcommands.open.farming.yml
+    - chestcommands.open.food.yml
+    - chestcommands.open.gear.yml
+    - chestcommands.open.kits.yml
+    - chestcommands.open.lord.yml
+    - chestcommands.open.main-menu.yml
+    - chestcommands.open.miner.yml
+    - chestcommands.open.mineral-menu.yml
+    - chestcommands.open.minerals.yml
+    - chestcommands.open.potion.yml
+    - chestcommands.open.potions.yml
+    - chestcommands.open.raiding.yml
+    - chestcommands.open.rules.yml
+    - chestcommands.open.sell-blocks.yml
+    - chestcommands.open.sell-drops.yml
+    - chestcommands.open.sell-farming.yml
+    - chestcommands.open.sell-minerals.yml
+    - chestcommands.open.shop-menu.yml
+    - chestcommands.open.spawners.yml
+    - chestcommands.open.venom.yml
+    - chestcommands.open.warps.yml
+    - cr.crate
+    - cr.info
+    - decapitation.bounty
+    - decapitation.collectheads
+    - decapitation.info
+    - deluxetags.gui
+    - dicordmc.chat
+    - discordmc.chat
+    - dragon.particles
+    - dragon.use
+    - duelme.player.accept
+    - duelme.player.info
+    - duelme.player.list
+    - duelme.player.send
+    - duels.command
+    - duels.duel
+    - duels.stats
+    - eatme.use
+    - essemtials.mail
+    - essentials.exp
+    - essentials.ignore
+    - essentials.kit
+    - essentials.kits.archer
+    - essentials.kits.colorw
+    - essentials.kits.daily
+    - essentials.kits.diamond
+    - essentials.kits.explorer
+    - essentials.kits.farming
+    - essentials.kits.food
+    - essentials.kits.pvp
+    - essentials.kits.sorry
+    - essentials.realname
+    - essentials.seen
+    - essentials.sell
+    - essentials.sell.bulk
+    - essentials.sell.hand
+    - essentials.sethome.multiple
+    - essentials.signs.use.buy
+    - essentials.signs.use.disposal
+    - essentials.signs.use.repair
+    - essentials.signs.use.sell
+    - essentials.signs.use.time
+    - essentials.time
+    - essentials.warp.mobs
+    - essentials.warps.1v1
+    - essentials.warps.arena
+    - essentials.warps.auction
+    - essentials.warps.blackmarket
+    - essentials.warps.bounty
+    - essentials.warps.coinflip
+    - essentials.warps.crates
+    - essentials.warps.donate
+    - essentials.warps.enchant
+    - essentials.warps.end
+    - essentials.warps.fishing
+    - essentials.warps.fps
+    - essentials.warps.info
+    - essentials.warps.KoTHs
+    - essentials.warps.mob
+    - essentials.warps.nether
+    - essentials.warps.parkour
+    - essentials.warps.portals
+    - essentials.warps.pvp
+    - essentials.warps.shop
+    - essentials.warps.spleef
+    - essentials.warps.stats
+    - exp.bottle
+    - factions.setwarp
+    - factions.warp
+    - fastcraft.command.toggle
+    - fastcraft.use
+    - fasttnt.use
+    - fbasics.bypass.commands.glitchable
+    - guiredeemmcmmo.sendcredits
+    - instantrespawn.respawn
+    - kms
+    - kryptictokens.send
+    - kryptictokens.shop
+    - memberuction.bid
+    - memberuction.buy
+    - memberuction.info
+    - memberuction.start
+    - miniaturepets.setname
+    - miniaturepets.setnamecolor
+    - miniaturepets.spawn
+    - multiverse.portal.access.*
+    - p.o
+    - pandorrabounty.add
+    - pandorrabounty.gui
+    - pandorrabounty.list
+    - ping.other
+    - ping.self
+    - pt.toggle
+    - ptokens.send
+    - pvptimer.check
+    - pvptimer.remove
+    - redeemmcmmo.redeem
+    - runes.use
+    - sell.use
+    - serversigns.use
+    - serversigns.use.*
+    - serversigns.use.kasino
+    - signs.use.free
+    - silkspawners.place.*
+    - silkspawners.silkdrop.*
+    - supplycrates.time
+    - terrorist.kms
+    - tntfill.allow
+    - trademe.command.accept
+    - trademe.command.block
+    - trademe.command.deny
+    - trademe.command.toggle
+    - trademe.commandoffer
+    - trademe.exptrade
+    - trademe.mcmmotrade
+    - trademe.moneytrade
+    - trademe.trade
+    - trading.trade
+    - Trash.use
+    - uan.chat.receive
+    - venom.armor.toggle
+    - venom.explorer
+    - venom.fwarp
+    - venom.gapplecooldown
+    - venom.global
+    - venom.list
+    - venom.ping
+    - venompotions.unstack
+    inheritance:
+    - g:essentials_default
+    - g:essentials_builder
+    - explorer
+    info:
+      build: true
+      prefix: '&7'
+      suffix: ''
+#
+# Python
+#
+  Python:
+    default: false
+    permissions:
+    - chatcontrol.bypass.move
+    - chatformat.Python
+    - commands
+    - essentials.clearinventory
+    - essentials.enderchest
+    - essentials.feed
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.kits.Python
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.python
+    - essentials.tptoggle
+    - essentials.workbench
+    - fastcraft.command.craft
+    - linkitem.use
+    - perks
+    - playervaults.workbench
+    inheritance:
+    - g:essentials_default
+    - g:essentials_builder
+    - explorer
+    info:
+      build: true
+      prefix: '&8(&2P&8) &r'
+      suffix: ''
+#	  
+# BullSnake
+# 
+  BullSnake:
+    default: false
+    permissions:
+    - chatcontrol.bypass.move
+    - chatformat.Bullsnake
+    - commands
+    - essentials.back
+    - essentials.clearinventory
+    - essentials.enderchest
+    - essentials.ext
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.kits.BullSnake
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.Bullsnake
+    - essentials.tptoggle
+    - essentials.workbench
+    - fastcraft.command.craft
+    - linkitem.use
+    - perks
+    - playervaults.workbench
+    inheritance:
+    - g:essentials_default
+    - g:essentials_builder
+    - explorer
+#
+# Viper 
+#
+    Viper:
+    default: false
+    permissions:
+    - chatcontrol.bypass.move
+    - chatformat.Viper
+    - commands
+    - essentials.back
+    - essentials.clearinventory
+    - essentials.enderchest
+    - essentials.ext
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.keepxp
+    - essentials.kits.Viper
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.recipe
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.Viper
+    - essentials.tpahere
+    - essentials.tptoggle
+    - essentials.workbench
+    - fastcraft.command.craft
+    - linkitem.use
+    - perks
+    - playervaults.amount.1
+    - playervaults.size.1
+    - playervaults.workbench
+    inheritance:
+    - g:essentials_default
+    - g:essentials_builder
+    - explorer
+    info:
+      build: true
+      prefix: '&8(&eV&8) &r'
+      suffix: ''
+#
+# Cobra
+#
+  Cobra:
+    default: false
+    permissions:
+    - chatcontrol.bypass.move
+    - chatformat.Cobra
+    - commands
+    - dicordmc.chat
+    - essentials.back
+    - essentials.clearinventory
+    - essentials.enderchest
+    - essentials.ext
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.keepxp
+    - essentials.kits.cobra
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.ptime
+    - essentials.recipe
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.cobra
+    - essentials.tpahere
+    - essentials.tptoggle
+    - essentials.workbench
+    - fastcraft.command.craft
+    - fasttnt.use
+    - itemfilter.use
+    - linkitem.use
+    - perks
+    - playervaults.amount.1
+    - playervaults.size.2
+    - playervaults.workbench
+    - tntfill.allow
+    - venom.nofall
+    - venom.nofall.toggle
+    inheritance:
+    - g:essentials_default
+    - g:essentials_builder
+    - explorer
+    info:
+      build: true
+      prefix: '&8(&dC&8) &r'
+      suffix: ''
+#
+# Venomous
+#
+  Venomous:
+    default: false
+    permissions:
+    - chatcontrol.bypass.move
+    - chatformat.Venomous
+    - commands
+    - essentials.back
+    - essentials.clearinventory
+    - essentials.enderchest
+    - essentials.ext
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.invsee
+    - essentials.joinfullserver
+    - essentials.keepxp
+    - essentials.kits.Venomous
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.ptime
+    - essentials.recipe
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.enchanted
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.Venomous
+    - essentials.signs.color
+    - essentials.signs.format
+    - essentials.signs.magic
+    - essentials.tpahere
+    - essentials.tptoggle
+    - essentials.workbench
+    - fastcraft.command.craft
+    - fasttnt.use
+    - itemfilter.use
+    - linkitem.use
+    - perks
+    - playervaults.amount.1
+    - playervaults.size.3
+    - playervaults.workbench
+    - tntfill.allow
+    - venom.creeper
+    - venom.fix
+    - venom.nofall
+    - venom.nofall.toggle
+    - venom.nohunger
+    - venomanvil.use
+    inheritance:
+    - g:essentials_default
+    - g:essentials_builder
+    - explorer
+    info:
+      build: true
+      prefix: '&8(&aV&8) &r'
+      suffix: ''
+#
+# Anaconda
+#
+  Anaconda:
+    default: false
+    permissions:
+    - chatcontrol.bypass.move
+    - chatformat.Anaconda
+    - commands
+    - essentials.back
+    - essentials.clearinventory
+    - essentials.enderchest
+    - essentials.ext
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.invsee
+    - essentials.joinfullserver
+    - essentials.keepxp
+    - essentials.kits.Anaconda
+    - essentials.near
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.ptime
+    - essentials.recipe
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.enchanted
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.Anaconda
+    - essentials.signs.color
+    - essentials.signs.format
+    - essentials.signs.magic
+    - essentials.tpahere
+    - essentials.tptoggle
+    - essentials.workbench
+    - fastcraft.command.craft
+    - itemfilter.use
+    - linkitem.use
+    - mcmmo.perks.xp.double
+    - perks
+    - playervaults.amount.1
+    - playervaults.size.6
+    - playervaults.workbench
+    - venom.armor.toggle
+    - venom.armorbreak
+    - venom.creeper
+    - venom.fix
+    - venom.near
+    - venom.nightvision
+    - venom.nofall
+    - venom.nofall.toggle
+    - venom.nohunger
+    - venomanvil.use
+    inheritance:
+    - g:essentials_default
+    - g:essentials_builder
+    - explorer
+    info:
+      build: true
+      prefix: '&8(&c&lA&8) &r'
+      suffix: ''
+#
+#  STAFF RANKS 
+#
+
+#
+# Helper
+#
+  Helper:
+    default: false
+    permissions:
+    - essentials.links
+    - essentials.tptoggle
+    - VenomWarn.notify
+    - VenomWarn.warn
+    inheritance:
+    - explorer
+    - banmanager
+    info:
+      build: true
+      prefix: '&dStaff&r '
+      suffix: ''
+#
+# Trial-Mod
+#
+  Trial-Mod:
+    default: false
+    permissions:
+    - chatcontrol.bypass.rules
+    - chatcontrol.bypass.spamkick
+    - chatcontrol.commands.clear
+    - deluxechat.url
+    - essentials.afk.kickexempt
+    - essentials.chat.url
+    - essentials.chat.url.*
+    - essentials.links
+    - essentials.tptoggle
+    - essentials.url
+    - essentials.warp.Tournament
+    - essentials.warps.Tournament
+    - essentials.xp
+    - terrorist.suicide
+    - venom.staff
+    - VenomWarn.delwarn
+    - VenomWarn.notify
+    - VenomWarn.warn
+    inheritance:
+    - explorer
+    - banmanager
+    info:
+      build: true
+      prefix: '&dStaff&r '
+      suffix: ''
+#
+# Trial-Mod+
+#
+  Trial-ModPlus:
+    default: false
+    permissions:
+    - chatcontrol.bypass.rules
+    - chatcontrol.bypass.spamkick
+    - chatcontrol.commands.clear
+    - deluxechat.url
+    - essentials.afk.kickexempt
+    - essentials.chat.url
+    - essentials.chat.url.*
+    - essentials.links
+    - essentials.tptoggle
+    - essentials.url
+    - essentials.warp.Tournament
+    - essentials.warps.Tournament
+    - essentials.xp
+    - terrorist.suicide
+    - venom.staff
+    - VenomWarn.delwarn
+    - VenomWarn.notify
+    - VenomWarn.warn
+    inheritance:
+    - explorer
+    - banmanager
+    info:
+      build: true
+      prefix: '&dStaff&r '
+      suffix: ''
+#
+# Moderator
+#
+  Moderator:
+    default: false
+    permissions:
+    - bm.command.ban
+    - bm.command.ban.offline
+    - bm.command.tempban
+    - bm.command.tempban.offline
+    - bm.command.unban
+    - chatcontrol.bypass.ad
+    - chatcontrol.bypass.dupe.chat
+    - chatcontrol.bypass.move
+    - chatcontrol.bypass.time.chat
+    - chatcontrol.commands
+    - chatcontrol.commands.clear
+    - chatcontrol.notify.ad
+    - dragon.bypasscd
+    - essentials.afk.kickexempt
+    - essentials.chat.url
+    - essentials.heal
+    - staff.alerts.mention
+    - staff.alerts.namechange
+    - staff.alerts.xray
+    - staff.blacklist
+    - staff.chat.clear
+    - staff.compass
+    - staff.cps
+    - staff.examine
+    - staff.follow
+    - staff.gui
+    - staff.mode
+    - staff.random-teleport
+    - staff.tickets
+    inheritance:
+    - explorer
+    - banmanager
+    - trial-mod
+    info:
+      build: true
+      prefix: '&bStaff&r '
+      suffix: ''
+#
+# ModeratorPlus
+#
+  ModeratorPlus:
+    default: false
+    permissions:
+    - bm.command.ban
+    - bm.command.ban.offline
+    - bm.command.tempban
+    - bm.command.tempban.offline
+    - bm.command.unban
+    - chatcontrol.bypass.ad
+    - chatcontrol.bypass.dupe.chat
+    - chatcontrol.bypass.move
+    - chatcontrol.bypass.time.chat
+    - chatcontrol.commands
+    - chatcontrol.commands.clear
+    - chatcontrol.notify.ad
+    - dragon.bypasscd
+    - essentials.afk.kickexempt
+    - essentials.chat.url
+    - essentials.heal
+    - staff.alerts.mention
+    - staff.alerts.namechange
+    - staff.alerts.xray
+    - staff.blacklist
+    - staff.chat.clear
+    - staff.compass
+    - staff.cps
+    - staff.examine
+    - staff.follow
+    - staff.gui
+    - staff.mode
+    - staff.random-teleport
+    - staff.tickets
+    inheritance:
+    - explorer
+    - banmanager
+    - trial-mod
+    info:
+      build: true
+      prefix: '&bStaff&r '
+      suffix: ''
+#
+# SeniorMod
+#
+  SeniorMod:
+    default: false
+    permissions:
+    - bm.command.ban
+    - bm.command.ban.offline
+    - bm.command.tempban
+    - bm.command.tempban.offline
+    - bm.command.unban
+    - chatcontrol.bypass.ad
+    - chatcontrol.bypass.dupe.chat
+    - chatcontrol.bypass.move
+    - chatcontrol.bypass.time.chat
+    - chatcontrol.commands
+    - chatcontrol.commands.clear
+    - chatcontrol.commands.mute
+    - chatcontrol.notify.ad
+    - chatformat.WoodsPvP
+    - coreprotect.*
+    - coreprotect.inspect
+    - essentials.afk.kickexempt
+    - essentials.chat.*
+    - essentials.chat.mute.*
+    - essentials.clearchat
+    - essentials.coreprotect.*
+    - essentials.delhome.others
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.forcetp
+    - essentials.gamemod.spectator
+    - essentials.gamemode.spectator
+    - Essentials.god
+    - essentials.home.others
+    - essentials.nick.*
+    - essentials.seen.banreason
+    - essentials.seen.ipsearch
+    - essentials.socialspy
+    - essentials.spawn.others
+    - essentials.tp
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.vanish
+    - essentials.vanish.interact
+    - essentials.whois
+    - ffly.ally
+    - ffly.bypass
+    - ffly.enemy
+    - ffly.fly
+    - ffly.neutral
+    - ffly.safezone
+    - ffly.wilderness
+    - ffly.yours
+    - gamemode
+    - gamemode.self.spectator
+    - hop.self.spectator
+    - modifyworld.chat
+    - mutechat.mute
+    - staff.alerts.mention
+    - staff.alerts.namechange
+    - staff.alerts.xray
+    - staff.blacklist
+    - staff.chat.clear
+    - staff.compass
+    - staff.cps
+    - staff.examine
+    - staff.follow
+    - staff.gui
+    - staff.mode
+    - staff.random-teleport
+    - staff.tickets
+    inheritance:
+    - explorer
+    - banmanager
+    - trial-mod
+    info:
+      build: true
+      prefix: '&eStaff&r '
+      suffix: ''
+#
+# SeniorModPlus
+#
+  SeniorModPlus:
+    default: false
+    permissions:
+    - bm.command.ban
+    - bm.command.ban.offline
+    - bm.command.tempban
+    - bm.command.tempban.offline
+    - bm.command.unban
+    - chatcontrol.bypass.ad
+    - chatcontrol.bypass.dupe.chat
+    - chatcontrol.bypass.move
+    - chatcontrol.bypass.time.chat
+    - chatcontrol.commands
+    - chatcontrol.commands.clear
+    - chatcontrol.commands.mute
+    - chatcontrol.notify.ad
+    - chatformat.WoodsPvP
+    - coreprotect.*
+    - coreprotect.inspect
+    - essentials.afk.kickexempt
+    - essentials.chat.*
+    - essentials.chat.mute.*
+    - essentials.clearchat
+    - essentials.coreprotect.*
+    - essentials.delhome.others
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.forcetp
+    - essentials.gamemod.spectator
+    - essentials.gamemode.spectator
+    - Essentials.god
+    - essentials.home.others
+    - essentials.nick.*
+    - essentials.seen.banreason
+    - essentials.seen.ipsearch
+    - essentials.socialspy
+    - essentials.spawn.others
+    - essentials.tp
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.vanish
+    - essentials.vanish.interact
+    - essentials.whois
+    - ffly.ally
+    - ffly.bypass
+    - ffly.enemy
+    - ffly.fly
+    - ffly.neutral
+    - ffly.safezone
+    - ffly.wilderness
+    - ffly.yours
+    - gamemode
+    - gamemode.self.spectator
+    - hop.self.spectator
+    - modifyworld.chat
+    - mutechat.mute
+    - staff.alerts.mention
+    - staff.alerts.namechange
+    - staff.alerts.xray
+    - staff.blacklist
+    - staff.chat.clear
+    - staff.compass
+    - staff.cps
+    - staff.examine
+    - staff.follow
+    - staff.gui
+    - staff.mode
+    - staff.random-teleport
+    - staff.tickets
+    inheritance:
+    - explorer
+    - banmanager
+    - trial-mod
+    info:
+      build: true
+      prefix: '&eStaff&r '
+      suffix: ''
+#
+# Admin
+#
+  Admin:
+    default: false
+    permissions:
+    - bm.command.ban
+    - bm.command.ban.offline
+    - bm.command.banip
+    - bm.command.tempban
+    - bm.command.tempban.offline
+    - bm.command.unban
+    - bm.command.unbanip
+    - chatcontrol.bypass.ad
+    - chatcontrol.bypass.dupe.chat
+    - chatcontrol.bypass.move
+    - chatcontrol.bypass.time.chat
+    - chatcontrol.commands
+    - chatcontrol.commands.clear
+    - chatcontrol.commands.mute
+    - chatcontrol.notify.ad
+    - chatformat.admin
+    - coreprotect.*
+    - coreprotect.inspect
+    - essentials.afk.kickexempt
+    - essentials.chat.*
+    - essentials.chat.mute.*
+    - essentials.chat.url
+    - essentials.clearchat
+    - essentials.coreprotect.*
+    - essentials.delhome.others
+    - essentials.enderchest.modify
+    - essentials.enderchest.others
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.forcetp
+    - essentials.gamemod.spectator
+    - essentials.gamemode.spectator
+    - Essentials.god
+    - essentials.heal
+    - essentials.home.others
+    - essentials.invsee.modify
+    - essentials.msg.url
+    - essentials.nick.*
+    - essentials.realname
+    - essentials.seen.banreason
+    - essentials.seen.ipsearch
+    - essentials.signs.color
+    - essentials.socialspy
+    - essentials.spawn.others
+    - essentials.tp
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.vanish
+    - essentials.vanish.interact
+    - essentials.vanish.see
+    - essentials.whois
+    - factions.bypass
+    - factions.chatspy
+    - factions.disband.any
+    - factions.ownershipbypass
+    - ffly.ally
+    - ffly.bypass
+    - ffly.enemy
+    - ffly.fly
+    - ffly.neutral
+    - ffly.safezone
+    - ffly.wilderness
+    - ffly.yours
+    - gamemode
+    - gamemode.self.spectator
+    - groupmanager.manuadd
+    - groupmanager.manwhois
+    - hop.self.spectator
+    - modifyworld.chat
+    - mutechat.mute
+    - spacer
+    - staff.alerts.mention
+    - staff.alerts.namechange
+    - staff.alerts.xray
+    - staff.blacklist
+    - staff.chat.clear
+    - staff.compass
+    - staff.cps
+    - staff.examine
+    - staff.follow
+    - staff.freeze
+    - staff.gui
+    - staff.mode
+    - staff.random-teleport
+    - staff.tickets
+    inheritance:
+    - explorer
+    - banmanager
+    - trial-mod
+    info:
+      build: true
+      prefix: '&c&lAdmin&r '
+      suffix: ''
+#
+# AdminPlus
+#
+  AdminPlus:
+    default: false
+    permissions:
+    - bm.command.ban
+    - bm.command.ban.offline
+    - bm.command.banip
+    - bm.command.tempban
+    - bm.command.tempban.offline
+    - bm.command.unban
+    - bm.command.unbanip
+    - chatcontrol.bypass.ad
+    - chatcontrol.bypass.dupe.chat
+    - chatcontrol.bypass.move
+    - chatcontrol.bypass.time.chat
+    - chatcontrol.commands
+    - chatcontrol.commands.clear
+    - chatcontrol.commands.mute
+    - chatcontrol.notify.ad
+    - chatformat.admin
+    - coreprotect.*
+    - coreprotect.inspect
+    - essentials.afk.kickexempt
+    - essentials.chat.*
+    - essentials.chat.mute.*
+    - essentials.chat.url
+    - essentials.clearchat
+    - essentials.coreprotect.*
+    - essentials.delhome.others
+    - essentials.enderchest.modify
+    - essentials.enderchest.others
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.forcetp
+    - essentials.gamemod.spectator
+    - essentials.gamemode.spectator
+    - Essentials.god
+    - essentials.heal
+    - essentials.home.others
+    - essentials.invsee.modify
+    - essentials.msg.url
+    - essentials.nick.*
+    - essentials.realname
+    - essentials.seen.banreason
+    - essentials.seen.ipsearch
+    - essentials.signs.color
+    - essentials.socialspy
+    - essentials.spawn.others
+    - essentials.tp
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.vanish
+    - essentials.vanish.interact
+    - essentials.vanish.see
+    - essentials.whois
+    - factions.bypass
+    - factions.chatspy
+    - factions.disband.any
+    - factions.ownershipbypass
+    - ffly.ally
+    - ffly.bypass
+    - ffly.enemy
+    - ffly.fly
+    - ffly.neutral
+    - ffly.safezone
+    - ffly.wilderness
+    - ffly.yours
+    - gamemode
+    - gamemode.self.spectator
+    - groupmanager.manuadd
+    - groupmanager.manwhois
+    - hop.self.spectator
+    - modifyworld.chat
+    - mutechat.mute
+    - spacer
+    - staff.alerts.mention
+    - staff.alerts.namechange
+    - staff.alerts.xray
+    - staff.blacklist
+    - staff.chat.clear
+    - staff.compass
+    - staff.cps
+    - staff.examine
+    - staff.follow
+    - staff.freeze
+    - staff.gui
+    - staff.mode
+    - staff.random-teleport
+    - staff.tickets
+    inheritance:
+    - explorer
+    - banmanager
+    - trial-mod
+    info:
+      build: true
+      prefix: '&c&lAdmin&r '
+      suffix: ''
+#
+# BANMANAGER
+#
+  BanManager:
+    default: false
+    permissions:
+    - adminwatch.allow.playerinv
+    - adminwatch.allow.watch
+    - bm.command.bminfo
+    - bm.command.bminfo.alts
+    - bm.command.bminfo.others
+    - bm.command.bminfo.playerstats
+    - bm.command.dwarn
+    - bm.command.kick
+    - bm.command.notify
+    - bm.command.tempmute
+    - bm.command.tempmute.offline
+    - bm.command.unmute
+    - bm.command.warn
+    - bm.command.warn.offline
+    - bm.notify.ban
+    - bm.notify.denied.ip
+    - bm.notify.denied.player
+    - bm.notify.duplicateips
+    - bm.notify.kick
+    - bm.notify.mute
+    - bm.notify.notes
+    - bm.notify.notes.join
+    - bm.notify.tempban
+    - bm.notify.tempmute
+    - bm.notify.unban
+    - bm.notify.unmute
+    - bm.notify.warn
+    - CPS.alert
+    - essentials.afk
+    - essentials.invsee
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - mcmmo.chat.adminchat
+    - venom.staff
+    - venomwarn.checkwarn
+    - venomwarn.delwarn
+    - venomwarn.notify
+    - venomwarn.warn
+    inheritance: []
+    info:
+      build: true
+      prefix: '&7'
+      suffix: ''
