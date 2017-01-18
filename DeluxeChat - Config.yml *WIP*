@@ -405,44 +405,6 @@ formats:
     name_click_command: /msg %player%
     suffix_click_command: ''
 #
-# KANEKI_GHOUL_ STREAMER/YT
-#
-  kaneki_ghoul_:
-    priority: 89
-    channel: ''
-    prefix: '&8(&c&lAnaconda&8) &r'
-    name_color: ''
-    name: '&c%essentials_nickname%'
-    suffix: ' %deluxetags_tag% &8&l» '
-    chat_color: '&7'
-    channel_tooltip:
-    - '%deluxetags_description%'
-    suffix_tooltip:
-    - '&c&lClick here to go to my channel!'
-    name_tooltip:
-    - '&7-=[&c✦&7]=-  &7-=[&c&l%player%&7]=-  &7-=[&c✦&7]=-'
-    - '&r'
-    - '&6Player Health&7: &f%player_health%&e/&f%player_max_health%'
-    - '&eBalance&7: &a$&f%vaulteco_balance_formatted%'
-    - '&bVotes: &f%galistener_votes%'
-    - '&2Time Played: &f%statistic_time_played%'
-    - '&6Quiz Wins: &f%chatreaction_wins%'
-    - '&r'
-    - '&aKills&7: &f%killstats_kills%'
-    - '&cDeaths&7: &f%killstats_deaths%'
-    - '&eKDR&7: &f%killstats_kdr%'
-    - '&r'
-    - '&6Faction: &f%factions_faction%'
-    - '&aFaction Power: &f%factions_power%&7/&f%factions_powermax%'
-    - '&cFaction Claims: &f%factions_claims%'
-    prefix_tooltip:
-    - '&c%essentials_nickname% &7has purchased this rank from the store!'
-    - '&cClick this to open the donation store!'
-    channel_click_command: ''
-    prefix_click_command: '[URL]http://Buy.VenomPvP.org'
-    name_click_command: /msg %player%
-    suffix_click_command: '[URL]http://youtube.com/krakingamer'
-#
 # STREAMER - YT
 #
   Streamer:
